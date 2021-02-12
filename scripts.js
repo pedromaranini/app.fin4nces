@@ -103,11 +103,6 @@ const DOM = {
             <td class="date">${transaction.date}</td>
             <td>
                 <img 
-                    onclick="Transaction.edit(${index})"
-                    src="./assets/plus.svg" 
-                    alt="Editar transação" 
-                />
-                <img 
                     onclick="Transaction.remove(${index})"
                     src="./assets/minus.svg" 
                     alt="Remover transação" 
