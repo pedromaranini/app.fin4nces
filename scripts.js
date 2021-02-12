@@ -38,7 +38,7 @@ const Transaction = {
 
     add(transaction) {
         // Adicionando nova transação
-        Transaction.all.push(transaction)
+        Transaction.all.push(transaction);
         
         // Dando reload na aplicação atualizando os valores das novas transações
         App.reload();
@@ -84,11 +84,12 @@ const DOM = {
     addTransaction(transaction, index) {
         // Adicionando uma nova transação na tabela
         // console.log(transaction);
-        const tr = document.createElement('tr')
-        tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
+        const tr = document.createElement('tr');
+        tr.innerHTML = DOM.innerHTMLTransaction(transaction, index);
         tr.dataset.index = index;
 
-        DOM.transactionsContainer.appendChild(tr)
+        DOM.transactionsContainer.appendChild(tr);
+        
     },
     innerHTMLTransaction(transaction, index) {
         // Busncado o conteudo HTML e alterando os valores no Javascript
@@ -101,6 +102,11 @@ const DOM = {
             <td class="${cssClasse}">${formatAmount}</td>
             <td class="date">${transaction.date}</td>
             <td>
+                <img 
+                    onclick="Transaction.edit(${index})"
+                    src="./assets/plus.svg" 
+                    alt="Editar transação" 
+                />
                 <img 
                     onclick="Transaction.remove(${index})"
                     src="./assets/minus.svg" 
@@ -139,9 +145,9 @@ const Utils = {
     },
     // Formatando o valor digitado no input, caso seja inserido com ponto
     formatAmount(value) {
-        value = Number(value) * 100;
-        
-        return value;
+        value = value * 100;
+        // Arredodamento do numero Math.round
+        return Math.round(value);
     },
     // Formatação dos valores para o REAL
     formatCurrency(value) {
