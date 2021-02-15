@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="App Finances" title="App Finances" src="hhttps://media-exp1.licdn.com/dms/image/C4D22AQFGeGhRHdXtqg/feedshare-shrink_800/0/1613151440422?e=1616025600&v=beta&t=2M2-UGFX5S0d65wh-5V5xwoUINbnQWs0ZHxkVj_MgsE" />
+    <img alt="App Finances" title="App Finances" src="https://media-exp1.licdn.com/dms/image/C4D22AQFGeGhRHdXtqg/feedshare-shrink_2048_1536/0/1613151440391?e=1616025600&v=beta&t=6n-Xkc-tnks8fdXHh1MwoW-E31DiEWZMrUF9zj5O5Ys" />
 </h1>
 
  ## 💻 PROJECT
